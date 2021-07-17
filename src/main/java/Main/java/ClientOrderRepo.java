@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 
-@RepositoryRestResource(collectionResourceRel = "client", path = "client")
-public interface ClientRepository extends JpaRepository <Client, Long>
+@RepositoryRestResource(collectionResourceRel = "clientOrder", path = "clientOrder")
+public interface ClientOrderRepo extends JpaRepository <ClientOrder, Long>
 {
 }
