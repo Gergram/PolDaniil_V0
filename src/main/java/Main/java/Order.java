@@ -11,7 +11,7 @@ public class Order {
     private Client id_client;/*- идентификатор клиента*/
     @Column(nullable = false)
     private Integer status; /*- статус заказа*/
-    @Column(nullable = false)
+    @Column(nullable = false,length = 15)
     private Double total; /*- сумма по заказу*/
 
     public Long getId() {

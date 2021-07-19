@@ -9,11 +9,11 @@ public class Product {
     private Long id;/*- уникальный идентификатор*/
     @ManyToOne
     private Category id_category;/*- идентификатор категории*/
-    @Column(nullable = false)
+    @Column(nullable = false,unique = true,length = 50)
     private String name ;/*- название*/
-    @Column(nullable = false)
+    @Column(nullable = false,length = 400)
     private String description; /*- описание*/
-    @Column(nullable = false)
+    @Column(nullable = false,length = 15)
     private Double price;  /*- стоимость*/
 
     public Long getId() {

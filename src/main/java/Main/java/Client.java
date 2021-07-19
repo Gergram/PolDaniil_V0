@@ -9,11 +9,11 @@ public class Client {
     private Long id;
     @Column(nullable = false, unique = true)
     private Integer ex_id;/*id*/
-    @Column(nullable = false)
+    @Column(nullable = false,length = 255)
     private String full_name;/*fio*/
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true,length = 15)
     private Integer phone_number;
-    @Column(nullable = false)
+    @Column(nullable = false,length = 400)
     private String address;
 
     public Long getId() {
