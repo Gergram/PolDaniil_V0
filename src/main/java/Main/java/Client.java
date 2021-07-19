@@ -29,7 +29,10 @@ public class Client {
     }
 
     public void setEx_id(Integer ex_id) {
+
+        ex_id = ex_id;
         this.ex_id = ex_id;
+
     }
 
     public String getFull_name() {
@@ -37,7 +40,10 @@ public class Client {
     }
 
     public void setFull_name(String full_name) {
+
+        full_name = full_name;
         this.full_name = full_name;
+
     }
 
     public Integer getPhone_number() {
@@ -53,6 +59,9 @@ public class Client {
     }
 
     public void setAddress(String address) {
+
+        address = address;
         this.address = address;
+
     }
 }
