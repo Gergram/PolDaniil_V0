@@ -105,7 +105,7 @@ public abstract class EntityServiceImpl implements EntytiesService {
    private ClientOrderRepo clientOrderRepo;
 
     @Override
-    public List<ClientOrder> getClientOrdersByName(String name){
-       return clientOrderRepo.findAll();
+    public List<ClientOrder> getProductByClientID(){
+        return null;
     }
-}
+   }

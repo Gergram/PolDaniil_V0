@@ -74,6 +74,19 @@ public class RestQueryController {
     public List<Category> getAllCategories(){
         return entityService.getAllCategories();
     }
+//----------------------------------------------------------------------------------------------------------------------
+    @GetMapping("/rest/topPopularProducts?top=")
+    public List<Product> getTopPopular(){
+        return entityService.getTopPopular();
+    }
+    @GetMapping("/rest/listClientProducts?clientId= ")
+    public List<ClientOrder> getProductByClientID(){
+        return entityService.getProductByClientID();
+    }
+    @GetMapping("/rest/listClientOrders?clientName=")
+    public List<ClientOrder > getProductByClientName(){
+        return entityService.getProductByClientName();
+    }
 
 }
 

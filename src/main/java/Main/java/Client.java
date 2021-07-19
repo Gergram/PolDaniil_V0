@@ -7,14 +7,14 @@ public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    @Column(nullable = false)
-    private Integer Ex_id;/*id*/
-    @Column (nullable = false)
-    private String Full_name;/*fio*/
-    @Column (nullable = false)
+    @Column(nullable = false, unique = true)
+    private Integer ex_id;/*id*/
+    @Column(nullable = false,length = 255)
+    private String full_name;/*fio*/
+    @Column(nullable = false, unique = true,length = 15)
     private Integer phone_number;
-    @Column (nullable = false)
-    private String Address;
+    @Column(nullable = false,length = 400)
+    private String address;
 
     public Long getId() {
         return id;
@@ -25,19 +25,19 @@ public class Client {
     }
 
     public Integer getEx_id() {
-        return Ex_id;
+        return ex_id;
     }
 
     public void setEx_id(Integer ex_id) {
-        Ex_id = ex_id;
+        ex_id = ex_id;
     }
 
     public String getFull_name() {
-        return Full_name;
+        return full_name;
     }
 
     public void setFull_name(String full_name) {
-        Full_name = full_name;
+        full_name = full_name;
     }
 
     public Integer getPhone_number() {
@@ -49,10 +49,10 @@ public class Client {
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        address = address;
     }
 }

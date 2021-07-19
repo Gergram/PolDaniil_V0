@@ -8,9 +8,19 @@ public class OrderProduct {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id; /*- уникальный идентификатор*/
     @ManyToOne
-    private OrderProduct id_order;/*- идентификатор заказа*/
+    private Order id_order;/*- идентификатор заказа*/
     @ManyToOne
-    private OrderProduct id_product;/*- идентификатор товара*/
+    private Product id_product;/*- идентификатор товара*/
+    @ManyToOne
+    private Client id_client;
+
+    public Client getId_client() {
+        return id_client;
+    }
+
+    public void setId_client(Client id_client) {
+        this.id_client = id_client;
+    }
 
     public Long getId() {
         return id;
@@ -20,19 +30,19 @@ public class OrderProduct {
         this.id = id;
     }
 
-    public OrderProduct getId_order() {
+    public Order getId_order() {
         return id_order;
     }
 
-    public void setId_order(OrderProduct id_order) {
+    public void setId_order(Order id_order) {
         this.id_order = id_order;
     }
 
-    public OrderProduct getId_product() {
+    public Product getId_product() {
         return id_product;
     }
 
-    public void setId_product(OrderProduct id_product) {
+    public void setId_product(Product id_product) {
         this.id_product = id_product;
     }
 
