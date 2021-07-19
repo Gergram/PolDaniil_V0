@@ -5,6 +5,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 
 @RepositoryRestResource(collectionResourceRel = "clientOrder", path = "clientOrder")
+@RepositoryRestResource(collectionResourceRel = "clintOrder", path = "clintOrder")
 public interface ClientOrderRepo extends JpaRepository <ClientOrder, Long>
 {
 }

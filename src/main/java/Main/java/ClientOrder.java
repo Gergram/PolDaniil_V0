@@ -1,6 +1,11 @@
 package Main.java;
 
+
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class ClientOrder {
@@ -27,6 +32,8 @@ public class ClientOrder {
     public void setName(Client name) {
         this.name = name;
     }
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     public Long getId() {
         return id;

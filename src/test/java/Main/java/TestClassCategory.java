@@ -81,7 +81,6 @@ public class TestClassCategory {
         Others.setParent(1L);
         сategoryRepository.save(Others);
 
-        @SpringBootTest
         class TestClassProduct {
             @Autowired
             private ProductRepo productRepository;
