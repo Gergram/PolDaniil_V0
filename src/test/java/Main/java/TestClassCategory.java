@@ -13,76 +13,74 @@ public class TestClassCategory {
     public void categorys() {
         Category Pizza = new Category();
         Pizza.setName("Пицца");
-        Pizza.setParent(0);
+        Pizza.setParent(0L);
         сategoryRepository.save(Pizza);
 
         Category Rolls = new Category();
         Rolls.setName("Роллы");
-        Rolls.setParent(0);
+        Rolls.setParent(0L);
         сategoryRepository.save(Rolls);
 
         Category Classic_rolls = new Category();
         Classic_rolls.setName("Классика");
-        Classic_rolls.setParent(1);
+        Classic_rolls.setParent(1L);
         сategoryRepository.save(Classic_rolls);
 
         Category Baked_rolls = new Category();
         Baked_rolls.setName("Запечённые");
-        Baked_rolls.setParent(1);
+        Baked_rolls.setParent(1L);
         сategoryRepository.save(Baked_rolls);
 
         Category Sweet_rolls = new Category();
         Sweet_rolls.setName("Сладкие");
-        Sweet_rolls.setParent(1);
+        Sweet_rolls.setParent(1L);
         сategoryRepository.save(Sweet_rolls);
 
         Category Sets = new Category();
         Sets.setName("Сеты");
-        Sets.setParent(1);
+        Sets.setParent(1L);
         сategoryRepository.save(Sets);
 
         Category Burgers = new Category();
         Burgers.setName("Бургеры");
-        Burgers.setParent(0);
+        Burgers.setParent(0L);
         сategoryRepository.save(Burgers);
 
         Category Classic_burgers = new Category();
         Classic_burgers.setName("Классические Бургеры");
-        Classic_burgers.setParent(1);
+        Classic_burgers.setParent(1L);
         сategoryRepository.save(Classic_burgers);
 
         Category Spicy_burgers = new Category();
         Spicy_burgers.setName("Острые Бургеры");
-        Spicy_burgers.setParent(1);
+        Spicy_burgers.setParent(1L);
         сategoryRepository.save(Spicy_burgers);
 
         Category Beverages = new Category();
         Beverages.setName("Напитки");
-        Beverages.setParent(0);
+        Beverages.setParent(0L);
         сategoryRepository.save(Beverages);
 
         Category Carbonated_drinks = new Category();
         Carbonated_drinks.setName("Газированные напитки");
-        Carbonated_drinks.setParent(1);
+        Carbonated_drinks.setParent(1L);
         сategoryRepository.save(Carbonated_drinks);
 
         Category Energy_drinks = new Category();
         Energy_drinks.setName("Энергетические напитки");
-        Energy_drinks.setParent(1);
+        Energy_drinks.setParent(1L);
         сategoryRepository.save(Energy_drinks);
 
         Category Juices = new Category();
         Juices.setName("Соки");
-        Juices.setParent(1);
+        Juices.setParent(1L);
         сategoryRepository.save(Juices);
 
         Category Others = new Category();
         Others.setName("Другие");
-        Others.setParent(1);
+        Others.setParent(1L);
         сategoryRepository.save(Others);
 
-
-        @SpringBootTest
         class TestClassProduct {
             @Autowired
             private ProductRepo productRepository;

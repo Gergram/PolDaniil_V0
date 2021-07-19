@@ -7,10 +7,10 @@ public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;/*- уникальный идентификатор*/
-    @Column(nullable = false)
+    @Column(nullable = false,unique = true,length = 50)
     private String name;/*- название категории*/
     @Column
-    private Integer parent;/*- родительская категория*/
+    private Long parent;/*- родительская категория*/
 
     public Long getId() {
         return id;
@@ -28,11 +28,11 @@ public class Category {
         this.name = name;
     }
 
-    public Integer getParent() {
+    public Long getParent() {
         return parent;
     }
 
-    public void setParent(Integer parent) {
+    public void setParent(Long parent) {
         this.parent = parent;
     }
 }
