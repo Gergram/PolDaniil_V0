@@ -8,7 +8,7 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;/*- уникальный идентификатор*/
     @ManyToOne
-    private Order id_client;/*- идентификатор клиента*/
+    private Client id_client;/*- идентификатор клиента*/
     @Column(nullable = false)
     private Integer status; /*- статус заказа*/
     @Column(nullable = false)
@@ -22,11 +22,11 @@ public class Order {
         this.id = id;
     }
 
-    public Order getId_client() {
+    public Client getId_client() {
         return id_client;
     }
 
-    public void setId_client(Order id_client) {
+    public void setId_client(Client id_client) {
         this.id_client = id_client;
     }
 
