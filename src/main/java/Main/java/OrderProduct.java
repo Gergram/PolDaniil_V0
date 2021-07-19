@@ -22,6 +22,7 @@ public class OrderProduct {
         this.id_client = id_client;
     }
 
+
     public Long getId() {
         return id;
     }
