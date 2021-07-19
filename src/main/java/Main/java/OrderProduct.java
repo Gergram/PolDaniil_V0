@@ -11,6 +11,17 @@ public class OrderProduct {
     private Order id_order;/*- идентификатор заказа*/
     @ManyToOne
     private Product id_product;/*- идентификатор товара*/
+    @ManyToOne
+    private Client id_client;
+
+    public Client getId_client() {
+        return id_client;
+    }
+
+    public void setId_client(Client id_client) {
+        this.id_client = id_client;
+    }
+
 
     public Long getId() {
         return id;

@@ -35,4 +35,5 @@ public class Category {
     public void setParent(Long parent) {
         this.parent = parent;
     }
+
 }
